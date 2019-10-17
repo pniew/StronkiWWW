@@ -1,0 +1,50 @@
+img {
+    max-height: 100px;
+}
+
+div{
+    max-width: 500px;
+}
+
+#obrazki{
+    position: relative;
+    background-color: navy;
+    color: beige;
+    left: 200px;
+}
+table, th, td{
+    border-collapse: collapse;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+#obrazek2{
+    width:50%
+}
+
+.navi:visited{
+    color: gold;
+}
+.navi:hover{
+    color: darkorchid;
+}
+a:link{
+    color: red;
+}
+a:visited{
+    color: green;
+}
+a:hover{
+    color: black;
+}
+a:active{
+    color: blue;
+}
+
+.artykul{
+    color: brown;
+}
+
+.akapit{
+    color: blue;
+}

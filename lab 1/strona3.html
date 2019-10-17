@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        <title> Tytuł Strony </title>
+		<meta charset="UTF-8"/>
+		<meta name="keywords" content="strona próbna, strona probna, strona"/>
+		<meta name="author" content="P.Niewiarowska"/>
+		<meta name="generator" content="Notepad++"/>
+		
+		<link rel="stylesheet" href="stylesheet.css" type="text/css"/>
+	</head>
+	
+	<body>
+	<header>
+        <a href="index.html">
+			<img src="logo.png" alt="logotyp">
+		</a>
+        <h1>Strona numer 3</h1>
+	</header>
+	<aside>
+	
+	</aside>
+	<main>
+        <section id="sekcja1">
+            <h2>Sekcja1</h2>
+        </section>
+        
+	</main>
+	<footer>
+	
+    </footer>
+    
+    <script>
+        for(j = 1; j<=3; j++){
+            var artykul = document.createElement("article");
+            artykul.setAttribute("id", "artykul" + j);
+            var h = document.createElement("h3");
+            var tytul = document.createTextNode("Artykuł " + j);
+            h.appendChild(tytul);
+            artykul.appendChild(h);
+            artykul.classList.add("artykul");
+
+            for(i = 1; i<= 6; i++){
+                var akapit = document.createElement("p");
+                var tekst = document.createTextNode("Akapit" + i);
+                akapit.appendChild(tekst);
+                akapit.classList.add("akapit");
+                artykul.appendChild(akapit);
+            }
+            var linia = document.createElement("hr");
+            artykul.appendChild(linia);
+            document.getElementById("sekcja" + 1).appendChild(artykul);
+        }
+    </script>
+	</body>
+</html>
