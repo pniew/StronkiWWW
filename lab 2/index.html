@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task 2</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="container">
+        <header class="mx-auto my-4" style="width: 400px;">
+            <h1 class="header">
+                TODO Task List <span class="badge badge-primary" data-toggle="tooltip" data-placement="bottom"
+                title="Amount of tasks"> </span>
+            </h1>
+        </header>
+        <div>
+            <ul id="taskList" class="list-group">
+                <li class="list-group-item task" id="liItemTemplate" name="task" style="display: none;"
+                    data-toggle="tooltip" data-placement="left" title="Task id">
+                    <div class="task-description" name="Description">
+                        Description Template
+                    </div>
+                    <div class="task-edition input-group" name="Edit">
+                        <input class="form-control" name="DescInput" type="text">
+                        <div class="input-group-append">
+                            <button class="btn btn-success" name="Save" data-toggle="tooltip" data-placement="bottom"
+                                title="Save this task">Save</button>
+                            <button class="btn btn-danger" name="Delete" data-toggle="tooltip" data-placement="bottom"
+                                title="Delete this task">Delete</button>
+                            <button class="btn btn-outline-primary" name="Cancel" data-toggle="tooltip"
+                                data-placement="bottom" title="Cancel edition and revert value">Cancel</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="input-group mt-4">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">New:</span>
+                </div>
+                <input class="form-control" id="taskDescription" type="text" />
+                <div class="input-group-append">
+                    <button class="btn btn-outline-primary" onClick="addNewTask()" data-toggle="tooltip"
+                        data-placement="top" title="Create new task and add it to the list">Add</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
